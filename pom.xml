@@ -314,6 +314,7 @@
                 <artifactId>spring-javaformat-maven-plugin</artifactId>
                 <version>${spring-javaformat.version}</version>
             </plugin>
+            <!-- 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -348,7 +349,7 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
-                            <!-- Checkstyle rules inherited from spring-cloud-build -->
+                            Checkstyle rules inherited from spring-cloud-build
                             <suppressionsLocation>${session.executionRootDirectory}/eclipse/checkstyle-suppressions.xml</suppressionsLocation>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
                             <consoleOutput>true</consoleOutput>
@@ -359,6 +360,7 @@
                     </execution>
                 </executions>
             </plugin>
+             -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -384,12 +386,14 @@
     </build>
 
     <reporting>
+    	<!-- 
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
         </plugins>
+         -->
     </reporting>
 
     <profiles>
